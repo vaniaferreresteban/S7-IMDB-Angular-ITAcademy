@@ -18,9 +18,9 @@ export class PersonComponent implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
 
   person?: Person;
-  IMDBKey: string = environment.IMDBKey;
+  IMDBKey: string = environment.IMDB_KEY;
 
-  getPerson  = (id: string): void => {
+  getPerson = (id: string): void => {
     const url = 'https://api.themoviedb.org/3/person/';
 
     const options = {
@@ -29,8 +29,8 @@ export class PersonComponent implements OnInit {
         Authorization: this.IMDBKey,
       },
     };
-    
-      this.httpClient.get<Person>(url + id, options).subscribe({
+
+    this.httpClient.get<Person>(url + id, options).subscribe({
       next: (apiResponse) => {
         this.person = apiResponse;
       },
@@ -52,7 +52,7 @@ export class PersonComponent implements OnInit {
     };
     this.httpClient.get<Person>(url + searchTerm, options).subscribe({
       next: (apiResponse) => {
-        this.person =  apiResponse;
+        this.person = apiResponse;
       },
       error: (error: HttpErrorResponse) => {
         console.error('Ha fallat la crida. Estat:', error.status);

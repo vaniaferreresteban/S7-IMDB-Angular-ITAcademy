@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  IMDBKey:
+  IMDB_KEY:
     '',
   SUPABASE_URL: '',
   SUPABASE_KEY:

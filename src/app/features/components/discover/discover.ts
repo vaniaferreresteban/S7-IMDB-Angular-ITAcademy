@@ -17,7 +17,7 @@ import { MatIcon } from '@angular/material/icon';
   styleUrl: './discover.scss',
 })
 export class Discover {
-  IMDBKey: string = environment.IMDBKey;
+  IMDBKey: string = environment.IMDB_KEY;
   headers = {
     accept: 'application/json',
     Authorization: this.IMDBKey,

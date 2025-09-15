@@ -21,7 +21,7 @@ export class MovieComponent implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
 
   movie?: Movie;
-  IMDBKey: string = environment.IMDBKey;
+  IMDBKey: string = environment.IMDB_KEY;
 
   getMovie = (id: string): void => {
     const url = 'https://api.themoviedb.org/3/movie/';
