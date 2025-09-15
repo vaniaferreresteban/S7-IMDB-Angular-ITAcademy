@@ -1,59 +1,119 @@
-# S7
+# S7: IMDB (Angular, ITAcademy)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Aquest lliurament està basat en una prova tècnica d'una gran empresa del sector e-commerce, que busca desenvolupadors/es front-end en la ciutat de Barcelona.
 
-## Development server
+## Taula de Continguts
 
-To start a local development server, run:
+- [Sobre el Projecte](#sobre-el-projecte)
+- [Característiques](#característiques)
+- [Demostració Visual](#demostració-visual)
+- [Tecnologies Utilitzades](#tecnologies-utilitzades)
+- [Instal·lació](#installació)
+- [Ús](#ús)
+- [Llicència](#llicència)
+- [Contacte](#contacte)
+
+## Sobre el Projecte
+
+La prova tècnica consisteix a: consumir les dades d'una API, mostrar-les en una pantalla a través d'un llistat i mostrar el detall de cada ítem del llistat.
+
+## Característiques
+
+Bona arquitectura:
+POSTMAN per consumir APIs
+Gestió de Guard per protegir rutes
+Routing
+Serveis
+Token de tipus JWT
+
+## Demostració Visual
+
+Aquí pots veure un exemple de les pantalles principals de l'aplicació.
+
+<img src="https://i.imgur.com/wKXfCYJ.jpeg" width="800">
+<img src="https://i.imgur.com/T1pk39m.png" width="800">
+
+## Tecnologies Utilitzades
+
+Aquest projecte ha estat desenvolupat utilitzant les següents tecnologies:
+
+- **[Angular](https://angular.dev/)** - v20.1.2
+- **[Angular Material](https://material.angular.dev/)** - v20.1.2
+- **[ngx Infinite Scroll](https://github.com/orizens/ngx-infinite-scroll)** - v20.0.0
+- **[TypeScript](https://www.typescriptlang.org/)** - v5.8.2
+- **[Node.js](https://nodejs.org/)** (Requerit per Angular CLI)
+- **[Supabase](https://supabase.com/)**
+- **HTML5**
+- **SCSS** (Sass)
+
+## Instal·lació
+
+Per configurar i executar aquest projecte localment, segueix els següents passos:
+
+### Prerequisits
+
+Assegura't de tenir instal·lat Node.js
+
+- **Node.js**: Descarrega'l i instal·la'l des de [nodejs.org](https://nodejs.org/). Es recomana una versió LTS.
+- **Angular CLI**: Instal·la el CLI d'Angular globalment si encara no el tens (la versió del projecte és 20.0.5):
+  ```bash
+  npm install -g @angular/cli
+  ```
+
+### Passos d'Instal·lació
+
+1.  **Clona el repositori:**
+    ```bash
+    git clone [https://github.com/vaniaferreresteban/S7-IMDB-Angular-ITAcademy.git](https://github.com/vaniaferreresteban/S7-IMDB-Angular-ITAcademy.git)
+    ```
+2.  **Navega al directori del projecte:**
+    ```bash
+    cd S7-S7-IMDB-Angular-ITAcademy
+    ```
+3.  **Instal·la les dependències de Node:**
+    ```bash
+    npm install
+    ```
+
+## Ús
+
+Una vegada que hagis instal·lat les dependències, pots executar l'aplicació en un servidor de desenvolupament local o construir-la per a producció.
+
+### Executar en Mode de Desenvolupament
+
+Per iniciar l'aplicació en mode de desenvolupament amb recàrrega en viu:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Obre el teu navegador i navega a http://localhost:4200/. L'aplicació es recarregarà automàticament si realitzes canvis als arxius font.
 
-## Code scaffolding
+### Construir per a Producció
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Per construir el projecte per a desplegament en un entorn de producció:
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+```Bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Els artefactes de construcció s'emmagatzemaran al directori dist/.
 
-## Running unit tests
+##Executar Proves
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Per executar les proves unitàries:
 
-```bash
+```Bash
 ng test
 ```
 
-## Running end-to-end tests
+## Llicència
 
-For end-to-end (e2e) testing, run:
+This project is open-source and available under the MIT License.
 
-```bash
-ng e2e
-```
+## Contacte
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Per a qualsevol pregunta o comentari, pots contactar amb la mantenidora del projecte:
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Vania Ferrer Esteban
+GitHub: vaniaferreresteban
