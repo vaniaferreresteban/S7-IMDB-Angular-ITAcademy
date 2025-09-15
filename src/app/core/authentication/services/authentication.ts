@@ -29,8 +29,8 @@ export class AuthenticationService {
   constructor() {
     if (isPlatformBrowser(this.platformId)) {
       this.supabase = createClient(
-        environment.SUPABASE_URL,
-        environment.SUPABASE_KEY,
+        environment.supabaseUrl,
+        environment.supabaseKey,
       );
 
       this.supabase.auth.onAuthStateChange((event, session) => {
