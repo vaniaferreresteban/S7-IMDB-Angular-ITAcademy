@@ -1,0 +1,6 @@
+<a
+  [routerLink]="authService.isLoggedIn() ? '/discover' : '/sign-in'"
+  class="discover-button"
+>
+  <button matFab background-color="warn" extended>Discover EVERYTHING!</button>
+</a>

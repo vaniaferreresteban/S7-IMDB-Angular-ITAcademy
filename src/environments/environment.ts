@@ -1,0 +1,7 @@
+export const environment = {
+  production: true,
+  IMDBKey:
+    'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNDdjMmZhOGRlZTI1MDk2NjE3YzlhN2QzYTM0MTMzNiIsIm5iZiI6MTc1MjUyNDcxOC43NzMsInN1YiI6IjY4NzU2N2FlMjFlM2VlOTE0NjhlNGU2OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KXJtf2GCCB-Nxn1KIxJXl6IeNmOxfqy9wa17QPwa5Rk',
+  supabaseUrl: 'https://clmlgwqaseldpbzrulns.supabase.co',
+  supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNsbWxnd3Fhc2VsZHBienJ1bG5zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI0NDczNjgsImV4cCI6MjA2ODAyMzM2OH0.spQW4kN4aJu4SZ3TaMMJm_I4HAnL929WwTvL9tC7X5E',
+};

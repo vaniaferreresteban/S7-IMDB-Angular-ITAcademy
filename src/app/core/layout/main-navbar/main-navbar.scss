@@ -1,0 +1,118 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 1em;
+  background-color: #121212;
+  margin: 0;
+  a:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+  .docs-navbar-header-item-selected {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .burger {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    > span {
+      align-self: center;
+      margin: 0;
+      font-size: var(1em);
+    }
+  }
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li {
+    list-style: none;
+    margin: 0 0.5em;
+  }
+  *,
+  .white {
+    color: white;
+  }
+  mat-toolbar > *,
+  span {
+    height: 32px;
+    padding: 5px;
+    align-self: center;
+  }
+
+  mat-toolbar {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
+    height: auto;
+    .separator {
+      display: none;
+    }
+    margin: 0 auto;
+    div:not(.spacer) {
+      flex: 1 1 50%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      * {
+        color: black;
+        box-sizing: border-box;
+        vertical-align: middle;
+        height: 100%;
+        margin: 0;
+        padding: 0 0.7em;
+        background-color: white;
+        border: none;
+      }
+      select {
+        border-right: 1px solid black;
+        border-radius: 5px 0 0 5px;
+      }
+      input {
+        flex: 1 1 auto;
+      }
+      button {
+        border-radius: 0 5px 5px 0;
+        svg {
+          box-sizing: content-box;
+          path {
+            color: gray;
+          }
+        }
+      }
+    }
+    .separator {
+      box-sizing: content-box;
+      border: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 0;
+      margin: 0 1em;
+      display: none;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  :host {
+    flex-flow: row nowrap;
+    height: 48px;
+
+    mat-toolbar {
+      height: 32px;
+      width: 60%;
+      flex-flow: row nowrap;
+
+      .separator {
+        display: inline-block;
+      }
+    }
+  }
+}

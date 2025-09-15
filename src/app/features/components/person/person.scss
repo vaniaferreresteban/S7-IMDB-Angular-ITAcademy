@@ -1,0 +1,120 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  section {
+    background-position: center;
+    background-size: cover;
+  }
+  .movie {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    > div {
+      z-index: 3;
+    }
+    .dark-gray {
+      color: darkgray;
+    }
+    .info-container {
+      padding: 1em;
+      flex: 1 1 50%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      h1 {
+        flex: 0 0 100%;
+        line-height: 1.2em;
+      }
+      > div {
+        flex: 1 1 100px;
+        padding: 1em;
+        color: gray;
+      }
+      .overview {
+        color: white;
+        flex: 1 0 50%;
+      }
+      .tags {
+        flex: 0 0 100%;
+      }
+      span {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        strong {
+          color: white;
+        }
+        svg {
+          position: relative;
+          top: -0.1em;
+          height: 24px;
+          width: 24px;
+          color: gold;
+          margin-right: 0.3em;
+        }
+      }
+    }
+  }
+  .movie::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      -90deg,
+      rgb(31, 31, 31) 20%,
+      rgba(31, 31, 31, 0.6) 80%,
+      rgb(31, 31, 31)
+    );
+  }
+  .cast {
+    background-color: white;
+  }
+  button {
+    margin-right: 0.3em;
+  }
+  .cast {
+    width: 100%;
+    padding: 1em 15%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    img {
+      max-width: 100px;
+      border-bottom: 1px solid black;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-content: center;
+      text-align: center;
+      img {
+        margin: 0 auto 0.3em;
+      }
+      margin-bottom: 1em;
+    }
+    a:hover {
+      color: darkgray;
+    }
+  }
+  .homepage {
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+}
