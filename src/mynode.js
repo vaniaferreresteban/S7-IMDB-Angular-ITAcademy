@@ -6,8 +6,8 @@ const dotenv = require('dotenv').config({ path: 'src/.env' });;
 
 const envFile = `export const environment = {
     IMDBKey: '${process.env.IMDBKey}',
-    supabaseUrl: '${process.env.supabaseUrl}',
-    supabaseKey: '${process.env.supabaseKey}'
+    SUPABASE_URL: '${process.env.SUPABASE_URL}',
+    SUPABASE_KEY: '${process.env.SUPABASE_KEY}'
 };
 `;
 const targetPath = path.join(__dirname, './src/environments/environment.development.ts');
