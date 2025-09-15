@@ -15,6 +15,10 @@ const envFile = `export const environment = {
 `;
 if (isProduction) {
     targetPath = path.join(__dirname, './src/environments/environment.ts');
+    if (!process.env.IMDB_KEY || !process.env.SUPABASE_URL || !process.env.SUPABASE_KEY) {
+        console.error(errorColor, 'ERROR: Faltan variables de entorno de producción en Vercel. Revisa la configuración del proyecto.');
+        process.exit(1);
+    }
     envFileContent = `export const environment = {
   production: true,
   IMDB_KEY: '${process.env.IMDB_KEY}',
