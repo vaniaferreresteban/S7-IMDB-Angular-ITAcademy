@@ -1,1 +1,8 @@
-export const environment = {};
+export const environment = {
+  production: true,
+  IMDBKey:
+    '',
+  supabaseUrl: '',
+  supabaseKey:
+    '',
+};
