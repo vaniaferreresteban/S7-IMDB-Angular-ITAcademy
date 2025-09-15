@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node -r dotenv/config mynode.js && ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -25,7 +25,7 @@
     "@supabase/supabase-js": "^2.52.1",
     "angular-eslint": "^20.1.1",
     "cross-env": "^7.0.3",
-    "dotenv": "^17.2.0",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "ngx-infinite-scroll": "^20.0.0",
     "rxjs": "~7.8.0",
