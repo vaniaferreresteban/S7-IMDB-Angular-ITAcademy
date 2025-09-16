@@ -3,7 +3,7 @@ const path = require('path');
 const successColor = '\x1b[32m%s\x1b[0m';
 const checkSign = '\u{2705}';
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = import.meta.env.NODE_ENV === 'production';
 
 let targetPath;
 let envFileContent;
@@ -13,9 +13,9 @@ if (isProduction) {
   targetPath = path.join(__dirname, './src/environments/environment.ts');
   envFileContent = `export const environment = {
   production: true,
-  IMDB_KEY: '${process.env.IMDB_KEY}',
-  SUPABASE_URL: '${process.env.SUPABASE_URL}',
-  SUPABASE_KEY: '${process.env.SUPABASE_KEY}'
+  IMDB_KEY: '${import.meta.env.NG_APP_IMDB_KEY}',
+  SUPABASE_URL: '${import.meta.env.NG_APP_SUPABASE_URL}',
+  SUPABASE_KEY: '${import.meta.env.NG_APP_SUPABASE_KEY}'
 };
 `;
 } else {
@@ -24,9 +24,9 @@ if (isProduction) {
   targetPath = path.join(__dirname, './src/environments/environment.development.ts');
   envFileContent = `export const environment = {
   production: false,
-  IMDB_KEY: '${process.env.IMDB_KEY}',
-  SUPABASE_URL: '${process.env.SUPABASE_URL}',
-  SUPABASE_KEY: '${process.env.SUPABASE_KEY}'
+  IMDB_KEY: '${import.meta.env.NG_APP_IMDB_KEY}',
+  SUPABASE_URL: '${import.meta.env.NG_APP_SUPABASE_URL}',
+  SUPABASE_KEY: '${import.meta.env.NG_APP_SUPABASE_KEY}'
 };
 `;
 }
